@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   root "home#index"
   
   # Route for showing muscles in a region
-  get '/regions/:region', to: 'home#show', as: :region
+  get "/regions/:region", to: "home#show", as: :region
 end
