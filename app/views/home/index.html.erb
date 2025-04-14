@@ -3,29 +3,52 @@
   <h2 style="font-size: 1.5rem; color: #666; margin-bottom: 2rem;">Your home for mastering the muscles</h2>
   
   <div style="width: 75%; display: flex; flex-direction: column; gap: 1rem;">
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">SHOULDER</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">UPPER ARM</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">FOREARM/HAND</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">HIP</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">UPPER LEG</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">LOWER LEG/FOOT</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">NECK</h3>
-    </div>
-    <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-      <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">BACK</h3>
-    </div>
+    <%= link_to region_path('shoulder'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">SHOULDER</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('upper_arm'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">UPPER ARM</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('forearm_hand'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">FOREARM/HAND</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('hip'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">HIP</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('upper_leg'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">UPPER LEG</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('lower_leg_foot'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">LOWER LEG/FOOT</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('neck'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">NECK</h3>
+      </div>
+    <% end %>
+    
+    <%= link_to region_path('back'), style: "text-decoration: none; color: inherit;" do %>
+      <div style="background: white; border: 1px solid black; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
+        <h3 style="margin: 0; text-align: center; font-size: 1.2rem; font-weight: bold;">BACK</h3>
+      </div>
+    <% end %>
   </div>
 </div> 

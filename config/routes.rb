@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+  
+  # Route for showing muscles in a region
+  get '/regions/:region', to: 'home#show', as: :region
 end
