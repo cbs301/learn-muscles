@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: learn-muscles
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: RAILS_ENV
+        value: production
+      - key: RAILS_SERVE_STATIC_FILES
+        value: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: learn-muscles-db
+          property: connectionString
+    healthCheckPath: /up
+    autoDeploy: true
+
+databases:
+  - name: learn-muscles-db
+    databaseName: learn_muscles_production
+    user: learn_muscles
+    plan: free 
